@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --primary-color: ;
+  --secondary-color: ;
+  --bg-1: #ecf0f3;
+  --bg-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --shadow: 3px 3px 6px #d1d9e692, -2px -2px 10px #ffffffc9;
+  --link-color: #1877f2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-1);
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+/* general class for display flex */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-clmn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
