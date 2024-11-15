@@ -1,0 +1,108 @@
+.hero {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero .banner {
+  padding: 1rem;
+  align-items: start;
+  border-radius: 2rem;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  text-align: left;
+  overflow: hidden;
+}
+
+.hero .banner.one {
+  background-image: linear-gradient(
+      to right,
+      rgba(212, 240, 242, 1),
+      rgba(212, 240, 242, 0.2)
+    ),
+    url("../../images/tractor-1.png");
+  background-color: var(--bg-4);
+}
+
+.hero .banner.two {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 243, 205, 1),
+      rgba(255, 243, 205, 0.2)
+    ),
+    url("../../images/tractor-4.png");
+  background-color: var(--bg-3);
+}
+
+.hero .banner.three {
+  background-image: linear-gradient(
+      to right,
+      rgba(223, 232, 252, 1),
+      rgba(223, 232, 252, 0.2)
+    ),
+    url("../../images/tractor-5.png");
+  background-color: var(--bg-5);
+}
+
+.hero .banner h3 {
+  max-width: 50%;
+  font-weight: 600;
+  font-size: 2.3rem;
+  color: var(--text-color-1);
+}
+
+.hero .banner h3 span {
+  color: var(--secondary-color);
+}
+.hero .banner.two h3 span {
+  color: var(--primary-color);
+}
+.hero .banner.three h3 span {
+  color: #22529b;
+}
+
+.hero .banner p {
+  max-width: 50%;
+  font-weight: 500;
+}
+
+.hero .banner button {
+  min-width: 10rem;
+}
+.hero .banner.one button {
+  background-color: var(--secondary-color);
+}
+.hero .banner.three button {
+  background-color: #22529b;
+}
+
+.hero .banner .image {
+  height: 100%;
+  width: 100%;
+}
+
+.hero .banner .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1223px) {
+  .hero .banner h3 {
+    max-width: none;
+  }
+
+  .hero .banner p {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

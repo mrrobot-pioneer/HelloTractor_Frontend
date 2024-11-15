@@ -14,7 +14,9 @@
   --secondary-color: #228b22;
   --bg-1: #ecf0f3;
   --bg-2: #ffffff;
-  --bg-3: #fec354;
+  --bg-3: #fff3cd;
+  --bg-4: #d4f0f2;
+  --bg-5: #dfe8fc;
   --bg-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --text-color-1: #1c1c1c;
   --text-color-2: #6c757d;
@@ -41,7 +43,14 @@ body {
 
 main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 95vh;
+  padding-top: 13rem;
+  padding: 13rem clamp(2rem, 3vw, 5rem);
+}
+
+section {
+  max-width: 1500px;
+  margin: 3rem auto 0 auto;
 }
 
 p {
