@@ -53,6 +53,10 @@
   flex-wrap: wrap;
 }
 
+.footer-middle .left i {
+  font-size: 3rem;
+}
+
 .footer-middle img {
   height: 2rem;
 }

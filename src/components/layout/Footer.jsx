@@ -2,9 +2,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/icons/hello-tractor-logo.png";
 import playStore from "../../assets/icons/play-store.svg";
 import appStore from "../../assets/icons/app-store.svg";
-import masterCard from "../../assets/icons/mastercard.svg";
-import visa from "../../assets/icons/visa.svg";
-import stripe from "../../assets/icons/stripe.svg";
 
 import "../../assets/styles/footer/footer.css";
 
@@ -80,12 +77,29 @@ export default function Footer() {
 
         {/* Footer middle */}
         <div className="footer-middle flex">
-          <div className="left flex">
-            <img src={stripe} alt="Stripe Logo" />
-            <img src={visa} alt="Visa Logo" />
-            <img src={masterCard} alt="Master Card Logo" />
-            <img src="" alt="" />
+          <div className="left flex payment-options">
+            <i
+              className="fa-brands fa-paypal"
+              title="Paypal"
+              style={{ color: "#003087" }}
+            ></i>
+            <i
+              className="fa-brands fa-stripe"
+              title="Stripe"
+              style={{ color: "#6772E5", fontSize: "4rem" }}
+            ></i>
+            <i
+              className="fa-brands fa-cc-visa"
+              title="Visa"
+              style={{ color: "#1a1f71" }}
+            ></i>
+            <i
+              className="fa-brands fa-cc-mastercard"
+              title="Mastercard"
+              style={{ color: "#eb001b" }}
+            ></i>
           </div>
+
           <div className="right flex">
             <img
               src={playStore}
