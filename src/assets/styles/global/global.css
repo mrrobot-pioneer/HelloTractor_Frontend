@@ -44,8 +44,7 @@ body {
 main {
   width: 100%;
   min-height: 95vh;
-  padding-top: 13rem;
-  padding: 13rem clamp(2rem, 3vw, 5rem);
+  padding: 13rem clamp(2rem, 3vw, 5rem) 3rem clamp(2rem, 3vw, 5rem);
 }
 
 section {
