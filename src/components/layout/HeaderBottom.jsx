@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/styles/header/header-bottom.css";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function HeaderBottom() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const dropdownRef = useRef(null);
+  const { openAuthModal } = useAuth();
 
   // Toggle dropdown visibility
   const toggleDropdown = () => {
@@ -57,12 +59,14 @@ export default function HeaderBottom() {
 
         {dropdownVisible && (
           <div className="dropdown-menu flex-clmn">
-            <NavLink
-              to="/account/signin"
+            <button
               className="dropdown-item signin btn-primary"
+              onClick={() => {
+                openAuthModal();
+              }}
             >
               SIGN IN
-            </NavLink>
+            </button>
             <NavLink
               to="/account/index"
               className="dropdown-item flex"

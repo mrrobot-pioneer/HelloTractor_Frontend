@@ -2,6 +2,7 @@ import HeaderTop from "./components/layout/HeaderTop";
 import HeaderBottom from "./components/layout/HeaderBottom";
 import MainRoutes from "./MainRoutes";
 import Footer from "./components/layout/Footer";
+import AuthModal from "./components/Auth/AuthModal";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
       <footer>
         <Footer />
       </footer>
+
+      {/* Global components */}
+      <AuthModal />
     </>
   );
 }

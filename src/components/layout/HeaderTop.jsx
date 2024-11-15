@@ -1,5 +1,5 @@
 import "../../assets/styles/header/header-top.css";
-import logo from "../../assets/images/hello-tractor-logo.png";
+import logo from "../../assets/icons/hello-tractor-logo.png";
 
 export default function HeaderTop() {
   return (

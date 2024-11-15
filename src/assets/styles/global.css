@@ -14,12 +14,18 @@
   --secondary-color: #228b22;
   --bg-1: #ecf0f3;
   --bg-2: #ffffff;
+  --bg-3: #fec354;
   --bg-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --text-color: #1c1c1c;
-  --text-color-2: #fff;
+  --text-color-1: #1c1c1c;
+  --text-color-2: #6c757d;
+  --text-color-white: #ffffff;
   --shadow: 3px 3px 6px #d1d9e692, -2px -2px 10px #ffffffc9;
   --border: 1px solid #dce1e4;
   --link-color: #1877f2;
+  --error-text: #f44336;
+  --success-text: #4caf50;
+  --warning-bg: #decd9dc0;
+  --warning-text: #2f2f2f;
 }
 
 html {
@@ -30,7 +36,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: var(--bg-1);
-  color: var(--text-color);
+  color: var(--text-color-1);
 }
 
 main {
@@ -40,9 +46,37 @@ main {
 
 p {
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.6px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+input {
+  border: var(--border);
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  font-weight: 400;
+}
+input:focus {
+  border-color: var(--primary-color);
 }
 
 /* general styles for buttons */
@@ -51,7 +85,7 @@ p {
   border-radius: 2rem;
   background-color: var(--primary-color);
   min-width: 8rem;
-  color: #fff;
+  color: var(--text-color-white);
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -85,7 +119,7 @@ p {
 }
 .btn-secondary:hover {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--text-color-white);
 }
 .btn-secondary:active {
   scale: 0.9;

@@ -53,21 +53,21 @@
   border: var(--border);
 }
 
-.header-bottom .account .dropdown-menu a {
+.header-bottom .account .dropdown-menu .dropdown-item {
   white-space: nowrap;
-  color: var(--text-color);
+  color: var(--text-color-1);
   padding: 0.5rem 1rem;
   width: 100%;
   justify-content: start;
 }
 
-.header-bottom .account .dropdown-menu a:hover {
+.header-bottom .account .dropdown-menu .dropdown-item:hover {
   background-color: var(--bg-1);
 }
 
-.header-bottom .account .dropdown-menu a.signin {
+.header-bottom .account .dropdown-menu .dropdown-item.signin {
   background-color: var(--primary-color);
-  color: var(--text-color-2);
+  color: var(--text-color-white);
   width: 90%;
   margin: 1rem auto 0.5rem auto;
   justify-content: center;
