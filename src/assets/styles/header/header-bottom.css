@@ -1,0 +1,74 @@
+.header-bottom {
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.header-bottom .menu {
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header-bottom .menu li {
+  list-style: none;
+  border-right: var(--border);
+  padding-right: 1.5rem;
+}
+
+.header-bottom .menu li a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  gap: 0.5rem;
+}
+.header-bottom .menu li a:hover {
+  opacity: 0.6;
+}
+
+.header-bottom .account {
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.header-bottom .account .visible {
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header-bottom .account .visible:hover {
+  opacity: 0.6;
+}
+
+/*  account drop down*/
+.header-bottom .account .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  width: fit-content;
+  align-items: start;
+  background: var(--bg-2);
+  gap: 0.5rem;
+  border: var(--border);
+}
+
+.header-bottom .account .dropdown-menu a {
+  white-space: nowrap;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: start;
+}
+
+.header-bottom .account .dropdown-menu a:hover {
+  background-color: var(--bg-1);
+}
+
+.header-bottom .account .dropdown-menu a.signin {
+  background-color: var(--primary-color);
+  color: var(--text-color-2);
+  width: 90%;
+  margin: 1rem auto 0.5rem auto;
+  justify-content: center;
+}

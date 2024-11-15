@@ -5,14 +5,20 @@
   scroll-behavior: smooth;
   border: none;
   outline: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 :root {
-  --primary-color: ;
-  --secondary-color: ;
+  --primary-color: #fd4c41;
+  --secondary-color: #228b22;
   --bg-1: #ecf0f3;
+  --bg-2: #ffffff;
   --bg-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --text-color: #1c1c1c;
+  --text-color-2: #fff;
   --shadow: 3px 3px 6px #d1d9e692, -2px -2px 10px #ffffffc9;
+  --border: 1px solid #dce1e4;
   --link-color: #1877f2;
 }
 
@@ -24,6 +30,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: var(--bg-1);
+  color: var(--text-color);
 }
 
 main {
@@ -36,6 +43,52 @@ p {
   line-height: 3rem;
   font-weight: 400;
   letter-spacing: 0.6px;
+}
+
+/* general styles for buttons */
+.btn-primary {
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  min-width: 8rem;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-primary:hover {
+  opacity: 0.8;
+}
+.btn-primary:active {
+  transform: scale(0.9);
+}
+
+.btn-secondary {
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  min-width: 10rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  transform-origin: center;
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.btn-secondary:active {
+  scale: 0.9;
 }
 
 /* general class for display flex */
@@ -52,4 +105,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.drop-down {
+  font-size: 1rem;
 }
