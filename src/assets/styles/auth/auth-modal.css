@@ -12,9 +12,8 @@
 }
 
 .auth-modal {
-  background: var(--bg-2);
   width: 90%;
-  max-width: 600px;
+  max-width: 650px;
   border-radius: 1rem;
   position: relative;
   min-height: 350px;
@@ -34,7 +33,7 @@
 
 /* left side */
 .auth-modal .left {
-  background-color: #fff3cd;
+  background-color: var(--bg-3);
   padding: 1rem;
   align-items: start;
   gap: 1.5rem;
@@ -47,11 +46,11 @@
 }
 
 .auth-modal .left button {
-  background-color: var(--bg-3);
+  background-color: #fec354;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
   transition: 0.3s;
 }
 .auth-modal .left button:hover {
@@ -60,7 +59,10 @@
 
 /* right side */
 .auth-modal .right {
+  background-color: var(--bg-2);
   padding: 2rem 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .auth-modal .right .social-auth {
@@ -95,13 +97,32 @@
 .sign-in-link:hover {
   color: var(--text-color-2);
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-modal .legal a {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+.auth-modal .legal a:hover {
+  color: var(--text-color-2);
+  text-decoration: underline;
+}
+
+.auth-modal .legal span {
+  display: inline;
+  height: 0.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--text-color-2);
 }
 
 .close-button {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   transition: 0.3s;
   cursor: pointer;
   color: var(--text-color-2);

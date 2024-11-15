@@ -5,6 +5,7 @@ import facebookIcon from "../../assets/icons/facebook-icon.png";
 import githubIcon from "../../assets/icons/github-icon.png";
 import { useAuth } from "../../contexts/AuthContext";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function AuthModal() {
   const { isAuthModalOpen, closeAuthModal } = useAuth();
@@ -94,6 +95,12 @@ export default function AuthModal() {
                 Register
               </span>
             </p>
+
+            <div className="legal flex">
+              <NavLink to="/terms-of-service">Terms of service</NavLink>
+              <span className="flex"></span>
+              <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+            </div>
           </div>
         ) : (
           <div className="right flex-clmn">
@@ -138,6 +145,12 @@ export default function AuthModal() {
                 Sign in
               </span>
             </p>
+
+            <div className="legal flex">
+              <NavLink to="/terms-of-service">Terms of service</NavLink>
+              <span className="flex"></span>
+              <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+            </div>
           </div>
         )}
       </div>

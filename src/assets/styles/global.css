@@ -70,13 +70,19 @@ h5 {
 input {
   border: var(--border);
   border-radius: 2rem;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1.5rem;
   transition: all 0.3s;
   font-weight: 400;
+  letter-spacing: 0.5px;
 }
 input:focus {
   border-color: var(--primary-color);
+}
+input::placeholder {
+  color: var(--text-color-2);
+  font-size: 1.35rem;
+  font-weight: 400;
 }
 
 /* general styles for buttons */
